@@ -5,12 +5,13 @@ body {
 }
 
 header {
-  background-color: #1e2a44;
+  background-color: #1A1E3B;
   color: white;
+  height: 3.1rem;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .header-top {
@@ -26,14 +27,13 @@ header {
 }
 
 .logo-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
 }
 
 .search-bar {
-  flex-grow: 1;
+  width: 30%;
   display: flex;
   align-items: center;
   background-color: #e0e0e0;
@@ -41,8 +41,7 @@ header {
   overflow: hidden;
   height: 40px;
   padding: 0 10px;
-      text-decoration: none;
- 
+
 }
 
 .search-bar input {
@@ -72,7 +71,7 @@ header {
 nav {
   background-color: #e0e0e0;
   padding: 10px 0;
-  height: 1.5rem;
+  height: 2rem;
 }
 
 nav ul {
