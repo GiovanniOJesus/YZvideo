@@ -112,6 +112,10 @@ main h1 {
   color: #1e2a44;
 }
 
+.titulo {
+  text-align: center;
+}
+
 /* Página Home */
 .content-grid {
   display: grid;
