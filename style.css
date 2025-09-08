@@ -228,17 +228,18 @@ main h1 {
 .policy-list {
   list-style: none;
   padding: 2rem;
+  font-size: 25px;
 }
 
 .policy-list li {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem; 
 }
 
 .policy-list li span {
   display: inline-block;
-  width: 3rem;
+  width: 5rem;
   height: 2rem;
   background-color: #e9ecef;
   border-radius: 50%;
