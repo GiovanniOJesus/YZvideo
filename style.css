@@ -5,13 +5,13 @@ body {
 }
 
 header {
-  background-color: #1A1E3B;
+  background-color: #181e30;
   color: white;
   height: 3.1rem;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-end ;
 }
 
 .header-top {
@@ -30,42 +30,6 @@ header {
   width: 60px;
   height: 60px;
   object-fit: cover;
-}
-
-.search-bar {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  background-color: #e0e0e0;
-  border-radius: 20px;
-  overflow: hidden;
-  height: 40px;
-  padding: 0 10px;
-
-}
-
-.search-bar input {
-  flex-grow: 1;
-  padding: 10px 15px;
-  border: none;
-  background: none;
-  font-size: 1em;
-  color: #333;
-  outline: none;
-}
-
-.search-bar button {
-  padding: 10px;
-  border: none;
-  background: none;
-  color: #666;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.search-bar button:hover {
-  color: #000;
 }
 
 nav {
