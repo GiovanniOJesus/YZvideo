@@ -194,86 +194,163 @@ main h1 {
   margin: 0;
 }
 
+.news-card img {
+  width: 100%;
+  height: 200px; /* Defina uma altura fixa para todas as imagens */
+  object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
 /* Página Políticas */
+/* --- Página Políticas --- */
+
 .policy-list {
-  list-style: none;
-  padding: 2rem;
-  font-size: 25px;
+  max-width: 900px; /* Define uma largura máxima para o conteúdo */
+  margin: 40px auto; /* Centraliza a lista na página */
+  padding: 0 20px; /* Adiciona um respiro nas laterais */
+  list-style: none; /* Remove as bolinhas padrão da lista */
 }
 
 .policy-list li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 3rem; 
+  display: flex; /* Alinha o número e o texto lado a lado */
+  align-items: flex-start; /* Alinha o topo do círculo com o topo do texto */
+  margin-bottom: 35px; /* Espaçamento entre os itens da lista */
+  line-height: 1.6; /* Melhora a legibilidade do texto */
+  text-align: justify; /* Justifica o texto, como na imagem */
+  color: #333; /* Cor do texto principal */
 }
 
 .policy-list li span {
-  display: inline-block;
-  width: 5rem;
-  height: 2rem;
-  background-color: #e9ecef;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
-  margin-right: 20px;
+  /* Propriedades para criar o círculo */
+  flex-shrink: 0; /* Impede que o círculo achate */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #e9ecef; /* Cor de fundo cinza claro do círculo */
+  border-radius: 50%; /* Transforma o elemento em um círculo perfeito */
+  
+  /* Estilo do número */
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #4F537D;
+
+  /* Espaçamento */
+  margin-right: 25px; /* Distância entre o círculo e o texto */
 }
 
-.policy-list li p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
+/* --- Página Departamentos --- */
 
-/* Página Departamentos */
-main {
-  padding: 20px;
+/* Cabeçalho da seção */
+.section-header {
+  text-align: left;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto 20px auto;
+  padding: 0 20px;
 }
 
-main h1 {
-  color: #1e2a44;
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 30px;
+.section-header h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin: 0;
 }
 
+.section-header .subheading {
+  font-size: 1.1em;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Grid dos departamentos */
 .departments-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* Estilo individual de cada card */
 .department-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 25px;
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  border: 1px solid #e9e9e9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .department-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
-.department-card .icon {
-  font-size: 2.5em;
-  color: #1e2a44;
-  margin-bottom: 15px;
+/* Ícone dentro do card */
+.card-icon {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #f0f2f5;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #555;
 }
 
-.department-card h3 {
-  font-size: 1.3em;
-  color: #1e2a44;
-  margin: 10px 0;
+/* Conteúdo de texto do card */
+.card-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2em;
+  color: #333;
+  text-transform: uppercase;
 }
 
-.department-card p {
+.card-content h4 {
+  margin: 0;
   font-size: 1em;
-  color: #666;
-  line-height: 1.5;
-  margin: 5px 0;
+  font-weight: normal;
+  color: #555;
+}
+
+.card-content p {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Card largo (Recursos Humanos) */
+.wide-card {
+  grid-column: span 3;
+}
+
+/* --- Ajustes para Telas Pequenas (Responsividade) --- */
+@media (max-width: 992px) {
+  .departments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wide-card {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+  .wide-card {
+    grid-column: span 1;
+  }
+  .section-header {
+    text-align: center;
+  }
 }
 
 /* Página Eventos */
@@ -322,4 +399,12 @@ main h1 {
 .subheading {
   color: #666;
   margin: 5px 0 20px;
+}
+/* Estilo para as imagens dentro dos cards de eventos */
+.event-card img {
+  width: 100%;
+  height: 150px; /* Altura fixa para manter a consistência */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 5px 5px 0 0; /* Arredonda apenas os cantos superiores */
+  margin-bottom: 15px;
 }

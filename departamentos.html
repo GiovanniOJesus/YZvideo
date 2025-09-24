@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YZ Video - Departamentos</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
   <header>
-  <div class="header-top">
-    <div class="logo">
-      <img src="logoyz.png" alt="YZ Video Logo" class="logo-img">
+    <div class="header-top">
+      <div class="logo">
+        <img src="logoyz.png" alt="YZ Video Logo" class="logo-img">
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
- <nav>
+  <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="sobre.html">Sobre</a></li>
@@ -27,36 +28,60 @@
   </nav>
 
   <main>
-    <h1 class="titulo"> Departamentos </h1>
-    <p class="subheading">Responsáveis por Departamentos</p>
-    <p class="subheading">Subheading</p>
+    <h1 class="titulo">Departamentos</h1>
+
+    <div class="section-header">
+        <h2>Responsáveis por Departamentos</h2>
+        <p class="subheading">Informações e contatos dos líderes de cada área.</p>
+    </div>
+
     <div class="departments-grid">
       <div class="department-card">
-        <div class="icon">📺</div>
-        <h3>T.I</h3>
-        <p>Title</p>
-        <p>Description</p>
+        <div class="card-icon">
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div class="card-content">
+          <h3>T.I</h3>
+          <h4>Carlos Silva</h4>
+          <p>Gerente de Tecnologia</p>
+        </div>
       </div>
+      
       <div class="department-card">
-        <div class="icon">🚚</div>
-        <h3>Logística</h3>
-        <p>Title</p>
-        <p>Description</p>
+        <div class="card-icon">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="card-content">
+          <h3>LOGÍSTICA</h3>
+          <h4>Ana Pereira</h4>
+          <p>Coordenadora de Operações</p>
+        </div>
       </div>
+
       <div class="department-card">
-        <div class="icon">💰</div>
-        <h3>Financeiro</h3>
-        <p>Title</p>
-        <p>Description</p>
+        <div class="card-icon">
+          <i class="fa-solid fa-chart-pie"></i>
+        </div>
+        <div class="card-content">
+          <h3>Financeiro</h3>
+          <h4>Mariana Costa</h4>
+          <p>Diretora Financeira</p>
+        </div>
       </div>
-      <div class="department-card">
-        <div class="icon">👥</div>
-        <h3>Recursos Humanos</h3>
-        <p>Title</p>
-        <p>Description</p>
+
+      <div class="department-card wide-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="card-content">
+          <h3>RECURSOS HUMANOS</h3>
+          <h4>João Santos</h4>
+          <p>Gerente de RH</p>
+        </div>
       </div>
     </div>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
