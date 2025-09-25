@@ -29,6 +29,10 @@ header {
   /* Removemos a margem à direita que empurrava o logo para a esquerda */
   /* margin-right: 20px; */ 
   align-items: center;
+  /* Garante que a imagem do logo dentro de um link não tenha borda */
+.logo a img {
+  border: none;
+}
 }
 
 .logo-img {
